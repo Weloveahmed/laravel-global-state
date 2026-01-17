@@ -21,17 +21,3 @@ if (!function_exists('global_state')) {
         return $manager->get($key, $default);
     }
 }
-
-if (!function_exists('global')) {
-    /**
-     * Alias for global_state helper.
-     *
-     * @param string|null $key
-     * @param mixed|null $default
-     * @return mixed|\AhmedZaky\GlobalState\Contracts\GlobalStateInterface
-     */
-    function global(?string $key = null, mixed $default = null)
-    {
-        return global_state($key, $default);
-    }
-}
